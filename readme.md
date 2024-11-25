@@ -25,7 +25,7 @@ Use this config to modify the parameters for a build.
 ## Install
 You can install this utility locally using: 
 ```
-deno install -n build -A https://raw.githubusercontent.com/nhrones/Utilities/main/Builder/mod.ts 
+deno install --global -n build -Afr https://raw.githubusercontent.com/nhrones/Devtools_Build/refs/heads/main/mod.ts
 ```
 Once installed, just enter **_build_**, from the root of a project.
 With the above configuration, you should see a new _bundle.js_ in the ./dist/ folder. 

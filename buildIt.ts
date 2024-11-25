@@ -12,7 +12,6 @@ import { build, stop } from "npm:esbuild@0.24.0";
  */
 export async function buildIt(cfg: Config) {
    console.log(`Bundling ${cfg.Entry} to ${cfg.OutPath} - minified = ${cfg.Minify}`)
-   console.log(cfg)
    await build({
       plugins: [...denoPlugins()],
       entryPoints: cfg.Entry,
