@@ -1,0 +1,16 @@
+{
+   "name": "@ndh/build",
+   "version": "1.0.0",
+   "description": "A utility to build and bundle TS files.",
+   "exports": "./mod.ts",
+   "license": "MIT",
+   "publish": {
+      "include": [
+         "build.ts",
+         "buildIt.ts",
+         "config.ts",
+         "mod.ts",
+         "readme.md"
+      ]
+   }
+}
