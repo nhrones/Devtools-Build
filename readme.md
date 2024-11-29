@@ -21,7 +21,7 @@ and place it in _./dist/bundle.js_.
 It also instructs esBuild to not minify the bundle.
 
 Use this config to modify the parameters for a build.    
-
+  
 ## Install
 You can install this utility locally using: 
 ```
