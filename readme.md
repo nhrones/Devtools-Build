@@ -25,7 +25,7 @@ Use this config to modify the parameters for a build.
 ## Install
 You can install this utility locally using: 
 ```
-deno install --global -n build -Afr https://jsr.io/@ndh/build/1.0.1/mod.ts
+deno install --global -n build -Afr https://jsr.io/@ndh/build/1.0.3/mod.ts
 ```
 Once installed, just enter **_build_**, from the root of a project.
 With the above configuration, you should see a new _bundle.js_ in the ./dist/ folder. 
