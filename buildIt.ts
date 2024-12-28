@@ -16,7 +16,7 @@ export async function buildIt(cfg: Config) {
       plugins: [...denoPlugins()],
       entryPoints: cfg.Entry,
       outfile: cfg.OutPath,
-      bundle: cfg.Bundle,
+      bundle: true,
       minify: cfg.Minify,
       keepNames: true,
       banner: { js: '// deno-lint-ignore-file' },
