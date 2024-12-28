@@ -1,5 +1,5 @@
 // deno-lint-ignore-file no-explicit-any
-import type { Config } from "jsr:@ndh/config@1.0.0";
+import type { Config } from "jsr:@ndh/config@1.0.2";
 import { denoPlugins } from "jsr:@luca/esbuild-deno-loader@^0.11.0";
 import { build, stop } from "npm:esbuild@0.24.0";
 
@@ -16,7 +16,7 @@ export async function buildIt(cfg: Config) {
       plugins: [...denoPlugins()],
       entryPoints: cfg.Entry,
       outfile: cfg.OutPath,
-      bundle: true,
+      bundle: cfg.Bundle,
       minify: cfg.Minify,
       keepNames: true,
       banner: { js: '// deno-lint-ignore-file' },

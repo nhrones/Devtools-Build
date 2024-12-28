@@ -1,5 +1,5 @@
-import type { Config} from "jsr:@ndh/config@1.0.0";
-import { getConfig } from "jsr:@ndh/config@1.0.0";
+import type { Config} from "jsr:@ndh/config@1.0.2";
+import { getConfig } from "jsr:@ndh/config@1.0.2";
 
 // If Deno.args[0] = -h or ? == 
 // we just show help text and exit.
@@ -30,9 +30,10 @@ Out: string - the folder to place the bundle in (defaults to 'dist')`
 */
 const requiredCfg = {
    "BundleName": "bundle.js",             
-   "Entry": ["./src/main.ts"],   /* deno.arg[0] */
-   "Minify": false,              /* deno.arg[1] */
-   "OutPath": "dist",                /* deno.arg[2] */
+   "Entry": ["./src/main.ts"], 
+   "Minify": false, 
+   "Bundle": true,
+   "OutPath": "dist", 
 } satisfies Config
 
 /** gets an existing config, or builds one.
@@ -42,6 +43,7 @@ const cfg = getConfig("build", Deno.args, requiredCfg)
 
 export const Entry = cfg.Entry || ["./src/main.ts"]
 export const Minify = cfg.Minify || false
+export const Bundle = cfg.Bundle || true
 export const Name = cfg.BundleName || "bundle.js"
 export const OutPath = (cfg.OutPath && cfg.OutPath.length > 0)
    ? `./${cfg.OutPath}/${Name}`
