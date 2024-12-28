@@ -31,8 +31,7 @@ Out: string - the folder to place the bundle in (defaults to 'dist')`
 const requiredCfg = {
    "BundleName": "bundle.js",             
    "Entry": ["./src/main.ts"], 
-   "Minify": false, 
-   "Bundle": true,
+   "Minify": false,
    "OutPath": "dist", 
 } satisfies Config
 
@@ -43,7 +42,6 @@ const cfg = getConfig("build", Deno.args, requiredCfg)
 
 export const Entry = cfg.Entry || ["./src/main.ts"]
 export const Minify = cfg.Minify || false
-export const Bundle = cfg.Bundle || false
 export const Name = cfg.BundleName || "bundle.js"
 export const OutPath = (cfg.OutPath && cfg.OutPath.length > 0)
    ? `./${cfg.OutPath}/${Name}`
