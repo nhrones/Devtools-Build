@@ -9,6 +9,7 @@
          "build.ts",
          "buildIt.ts",
          "config.ts",
+         "deps.ts",
          "mod.ts",
          "readme.md"
       ]
