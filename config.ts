@@ -1,5 +1,5 @@
-import type { Config} from "jsr:@ndh/config@1.0.2";
-import { getConfig } from "jsr:@ndh/config@1.0.2";
+import type { Config} from "./deps.ts";
+import { getConfig } from "./deps.ts";
 
 // If Deno.args[0] = -h or ? == 
 // we just show help text and exit.

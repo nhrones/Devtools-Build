@@ -1,7 +1,7 @@
 {
    "name": "@ndh/build",
-   "version": "1.0.6",
-   "description": "A utility to build and bundle TS files.",
+   "version": "1.0.8",
+   "description": "DEPRECATED:  A utility to build and bundle TS files.",
    "exports": "./mod.ts",
    "license": "MIT",
    "publish": {

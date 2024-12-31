@@ -1,7 +1,6 @@
 // deno-lint-ignore-file no-explicit-any
-import type { Config } from "jsr:@ndh/config@1.0.2";
-import { denoPlugins } from "jsr:@luca/esbuild-deno-loader@^0.11.0";
-import { build, stop } from "npm:esbuild@0.24.0";
+import type { Config } from "./deps.ts";
+import { denoPlugins, build, stop } from "./deps.ts";
 
 /** 
  * builds and bundles an entrypoint into a single ESM output. 
