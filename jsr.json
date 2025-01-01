@@ -1,6 +1,6 @@
 {
    "name": "@ndh/build",
-   "version": "1.0.8",
+   "version": "1.0.9",
    "description": "DEPRECATED:  A utility to build and bundle TS files.",
    "exports": "./mod.ts",
    "license": "MIT",

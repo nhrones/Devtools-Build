@@ -38,7 +38,7 @@ const requiredCfg = {
 /** gets an existing config, or builds one.
  *  @param {string} - the name of the configuration object
  */
-const cfg = getConfig("BUILD","1.0.6", Deno.args, requiredCfg)
+const cfg = getConfig("BUILD", "1.0.6", Deno.args, requiredCfg)
 
 export const Entry = cfg.Entry || ["./src/main.ts"]
 export const Minify = cfg.Minify || false
